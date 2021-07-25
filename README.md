@@ -1,3 +1,6 @@
+#changes
+
+
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/jenkins-x/jx-docs)
 # Jenkins X Docs
 <a id="markdown-jenkins-x-docs" name="jenkins-x-docs"></a>
@@ -10,20 +13,21 @@ This repository contains the source files for [jenkins-x.io](http://jenkins-x.io
 
 <!-- TOC -->
 
-- [Building the docs](#building-the-docs)
+- [Jenkins X Docs](#jenkins-x-docs)
+  - [Building the docs](#building-the-docs)
     - [Preparing the sources](#preparing-the-sources)
-        - [Git submodules](#git-submodules)
+      - [Git submodules](#git-submodules)
     - [Downloading npm modules](#downloading-npm-modules)
     - [Running Hugo](#running-hugo)
-        - [Locally](#locally)
-        - [Dockerized](#dockerized)
-- [Common Workflows](#common-workflows)
+      - [Locally](#locally)
+      - [Dockerized](#dockerized)
+  - [Common Workflows](#common-workflows)
     - [Running spell check](#running-spell-check)
     - [Checking links, images, etc](#checking-links-images-etc)
     - [Adding redirects](#adding-redirects)
     - [Upgrading the enhancements content](#upgrading-the-enhancements-content)
-- [Localization](#localization)
-- [Contributing](#contributing)
+  - [Localization](#localization)
+  - [Contributing](#contributing)
 
 <!-- /TOC -->
 
