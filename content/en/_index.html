@@ -27,6 +27,22 @@ linkTitle = "Jenkins X - Cloud Native CI/CD Built On Kubernetes"
     margin: 0rem;
   }
 
+  .media{
+    min-height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icons{
+    font-size: 6rem !important;
+  }
+
+  .bg-black{
+    background: radial-gradient(#434343, #000000);
+    color: #fff !important;
+  }
+
   @media (min-width: 576px) {
     .jumbotron {
       padding: 1rem;
@@ -164,33 +180,36 @@ linkTitle = "Jenkins X - Cloud Native CI/CD Built On Kubernetes"
       <div class="row">
         <div class="col-xs-12 col-lg-12">
           <div class="tag-line">Accelerate Your Continuous Delivery on Kubernetes</div>
-          <div class="tag-line-secondary mx-auto">automate the continuous delivery of change through your environments via GitOps and create previews on Pull Requests to help you accelerate</div>
+          <div class="tag-line-secondary mx-auto">Automate the continuous delivery of change through your environments via GitOps and create previews on Pull Requests to help you accelerate</div>
 
         </div>
       </div>
       <p>
-        <a href="/v3/" class="btn btn-lg bg-primary text-light my-4"> <i class="fa fa-paperclip fa-2x align-middle"></i> Get Started</a>&nbsp&nbsp;
-
-        <a href="/v3/develop/developing/#demo" class="btn btn-lg btn-secondary my-4"> <i class="fa fa-play-circle fa-2x align-middle"></i> Watch a demo </a>&nbsp;
-
-        <a href="https://github.com/jenkins-x/jx" class="btn btn-lg btn-secondary my-4" target="_BLANK" rel="noopener noreferrer"><i class="fa fa-github fa-2x align-middle"></i>  View Repo </a>
+        <a href="/v3/" class="btn btn-lg btn-primary text-light my-4">Get Started</a>&nbsp&nbsp;
+        <a href="/v3/develop/developing/#demo" class="btn btn-lg btn-secondary my-4">Watch a demo</a>&nbsp;
       </p>
+      <!-- <p>
+        <a href="https://github.com/jenkins-x/jx" class="btn btn-lg btn-secondary my-4" target="_BLANK" rel="noopener noreferrer"><i class="fa fa-github fa-2x align-middle"></i>  View Repo </a>
+      </p> -->
     </div>
   </section>
   <section class="py-5 bg-light">
     <div class="container">
+      
       <div class="row">
         <div class="col">
-          <div class="features text-center">Work on your code and let Jenkins X automate everything else</div>
+          <div class="features text-center">Work on your ideas and let Jenkins X takes care of the rest.</div>
         </div>
       </div>
+
       <div class="row">
-        <div class="col pt-2">
+
+        <div class="col pt-1">
           <div class="media">
-            <span style="font-size:2em; color:cornflowerblue">
-              <i class="fa fa-stopwatch fa-4x"></i>
+            <span style="color:cornflowerblue">
+              <i class="fa fa-stopwatch fa-4x icons"></i>
             </span>
-            <div class="media-body pl-4">
+            <div class="media-body pl-4 text-center my-4">
               <h2 class="mt-0"><a href="/v3/develop/create-project/">Automated CI/CD</a></h2>
               <h3>GitOps based Tekton pipelines</h3>
               <p>Rather than having to have deep knowledge of Kubernetes, containers or Tekton, Jenkins X will
@@ -199,13 +218,14 @@ linkTitle = "Jenkins X - Cloud Native CI/CD Built On Kubernetes"
             </div>
           </div>
         </div>
-        <div class="col pt-2">
+        
+        <div class="col pt-1">
           <div class="media">
-            <span class="fa-layers" style="font-size:2em; color: Tomato;">
-              <i class="fas fa-server fa-3x"  style="color:green"></i>
-              <i class="fa fa-server fa-3x" data-fa-transform="shrink-11 down-4.2 right-4" style="color: Dodgerblue;"></i>
+            <span class="fa-layers" style="color: Tomato;">
+              <i class="fas fa-server fa-3x icons"  style="color:green"></i>
+              <i class="fa fa-server fa-3x icons" data-fa-transform="shrink-11 down-4.2 right-4" style="color: Dodgerblue;"></i>
             </span>
-            <div class="media-body pl-4">
+            <div class="media-body pl-4 text-center my-4">
               <h2 class="mt-0"><a href="/v3/develop/environments/promotion/">Environments</a></h2>
               <h3>Promote change via GitOps</h3>
               <p>Each team gets a set of Environments. Jenkins X then automates the management of the Environments and
@@ -216,12 +236,12 @@ linkTitle = "Jenkins X - Cloud Native CI/CD Built On Kubernetes"
         <div class="w-100">
           <p class="h-75 d-inline-block"><br /></p>
         </div>
-        <div class="col pt-2">
+        <div class="col pt-1">
           <div class="media">
-            <span style="font-size:2em; color:goldenrod">
-              <i class="fa fa-server fa-4x"></i>
+            <span style="color:goldenrod">
+              <i class="fa fa-server fa-4x icons"></i>
             </span>
-            <div class="media-body pl-4">
+            <div class="media-body pl-4 text-center my-4">
               <h2 class="mt-0"><a href="/v3/develop/environments/preview/">Preview Environments</a></h2>
               <h3>Pull Request Preview Environments</h3>
               <p>Jenkins X automatically spins up Preview Environments for your Pull Requests so you can get fast
@@ -229,14 +249,14 @@ linkTitle = "Jenkins X - Cloud Native CI/CD Built On Kubernetes"
             </div>
           </div>
         </div>
-        <div class="col pt-2">
+        <div class="col pt-1">
           <div class="media">
-            <span style="font-size:2em; color: Tomato;">
-              <i class="fa fa-comments fa-4x"></i>
+            <span style="color: Tomato;">
+              <i class="fa fa-comments fa-4x icons"></i>
             </span>
-            <div class="media-body pl-4">
+            <div class="media-body pl-4 text-center my-4">
               <h2 class="mt-0"><a href="/v3/develop/developing/#using-chatops">ChatOps</a></h2>
-              <h3>Feedback and chat on Issues and Pull Requests</h3>
+              <h3>Updates on Issues and Pull Requests</h3>
               <p>Jenkins X automatically comments on your Commits, Issues and Pull Requests with feedback as code is
                 ready to be previewed, is promoted to environments or if Pull Requests are generated automatically to
                 upgrade versions</p>
@@ -244,6 +264,7 @@ linkTitle = "Jenkins X - Cloud Native CI/CD Built On Kubernetes"
           </div>
         </div>
       </div>
+      
       <div class="row">
         <div class="col text-center">
           <p class="mt-4">
@@ -256,6 +277,11 @@ linkTitle = "Jenkins X - Cloud Native CI/CD Built On Kubernetes"
 
   <section class="py-5">
     <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="features text-center">Join Our Community</div>
+        </div>
+      </div>
       <div class="row">
         <div class="col-lg-3 text-center">
           <span style="font-size: 64px; color: #37373C;">
@@ -295,7 +321,7 @@ linkTitle = "Jenkins X - Cloud Native CI/CD Built On Kubernetes"
   </section>
 
   <!-- Logo List Section -->
-  <section id="users" class="py-5 bg-light">
+  <section id="users" class="py-5 bg-black">
     <div class="container">
       <div class="row">
         <div class="col">
